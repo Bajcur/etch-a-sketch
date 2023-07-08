@@ -2,20 +2,28 @@ body {
     margin: 0;
     min-height: 100vh;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
   }
 
   div {
     margin: 0;
-    border: 1px solid black;
+    
   }
 
   #grid-container {
     display: flex;
-    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    margin: auto;
+  }
+
+  .box {
+    border: 0px;
   }
 
   .grid {
-    width: 100px;
-    height: 100px;
+    width: 25px;
+    height: 25px;
+    /*border: 1px solid black; */
   }
