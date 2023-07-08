@@ -16,6 +16,8 @@ body {
     justify-content: center;
     border: 1px solid black;
     margin: auto;
+    min-height: 430px;
+    min-width: 430px;
   }
 
   .box {
@@ -23,7 +25,5 @@ body {
   }
 
   .grid {
-    width: 25px;
-    height: 25px;
-    /*border: 1px solid black; */
+    border: 1px solid black; 
   }
