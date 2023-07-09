@@ -35,7 +35,6 @@ function userInput(){
 
 const button = document.getElementById("size");
 button.addEventListener("click", () => userInput());
-//createGrid();
 
 let isDrawing = false;
 function toDraw(){
@@ -53,11 +52,17 @@ function draw(){
     for (const grid of grids){
         grid.addEventListener("mousemove", () => {
             if (isDrawing){
-                grid.style.backgroundColor = "red";
+                grid.style.backgroundColor = randomRGB();
             }
         })
     }   
 }
 
-
+function randomRGB(){
+    let x = Math.floor(Math.random()*256);
+    let y = Math.floor(Math.random()*256);
+    let z = Math.floor(Math.random()*256);
+    let RGBColor = `rgb(${x}, ${y}, ${z})`;
+    return RGBColor;
+}
 
